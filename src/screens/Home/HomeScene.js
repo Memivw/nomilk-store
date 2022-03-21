@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from 'react';
+import WrapperComponent from '../../component/hoc/WrapperComponent';
+
 function HomeScene(props) {
   return (
     <div>
@@ -6,4 +9,4 @@ function HomeScene(props) {
     </div>
   );
 }
-export default HomeScene;
+export default WrapperComponent('HomeScene')(HomeScene);
