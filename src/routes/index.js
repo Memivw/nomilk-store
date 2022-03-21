@@ -1,11 +1,14 @@
-export const ROUTES = [{
-  ref: 'home',
-  path: '/home',
-  title: 'หน้าหลัก',
-  exact: true,
-  component: (props) => <HomeScene {...props} />
-}
-]
+import HomeScene from '../screens/Home/HomeScene';
+
+export const ROUTES = [
+  {
+    ref: 'home',
+    path: '/home',
+    title: 'หน้าหลัก',
+    exact: true,
+    component: (props) => <HomeScene {...props} />,
+  },
+];
 
 export const BOTTOM_TAB_ROUTES = [
   {
